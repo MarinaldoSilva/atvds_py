@@ -1,0 +1,28 @@
+lista_frutas = ["uva", "banana", "maçã", "laranja", "abacaxi"]
+validacao = True
+
+while validacao == True:
+    fruta = input("Escolha uma fruta para adicionar na lista: ")
+    lista_frutas.append(fruta)
+    print(f"Fruta: {fruta} adicionada com sucesso")
+    print("Escolha uma opção:")
+    print("1 - Adicionar fruta")
+    print("0 - Sair")
+    opcao = int(input("Escolha uma opção: "))
+
+    if opcao == 1:
+        fruta = input("Escolha uma fruta para adicionar na lista: ")
+        lista_frutas.append(fruta)
+    elif opcao == 0:
+        print("Saindo da lista de frutas")        
+
+        validacao = False
+
+for fruta in lista_frutas:
+    limite = "Cajá"
+    if fruta == limite:
+        print(f"Fruta encontrada: {fruta}")
+        break
+
+print(f"Lista de frutas: {lista_frutas}")
+
